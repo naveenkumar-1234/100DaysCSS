@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #3faf82;
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 0 2px 1px gray;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+  width: 65px;
+  cursor: pointer;
+}
+.wrapper > div{
+    background: white;
+    height: 7px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 1px gray;
+    
+}
+.toggle{
+    
+    .line-1{
+        animation: down 300ms linear forwards;
+        background: #000;
+        animation: rotateTop 300ms linear forwards;
+    }
+    .line-3{
+        animation: up 300ms linear forwards;
+        background: #000;
+        animation: rotateDown 300ms linear forwards;
+    }
+    .line-2{
+        animation: hide 300ms linear forwards ;
+    }
+}
+ 
+@keyframes rotateTop {
+    from{transform: rotateZ(0);}
+    to{transform: rotateZ(40deg);}
+}
+@keyframes rotateDown {
+    from{transform: rotateZ(0);}
+    to{transform: rotateZ(-40deg);}
+}
+@keyframes down {
+    from{
+        transform: translateY(0);
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(50deg);
+        transform: translateY(40px);
+    }
+}
+@keyframes up {
+    from{
+        transform: translateY(0), rotateZ(0);
+        
+    }
+    to{
+        transform: translateY(-40px);
+        
+    }
+}
+
+@keyframes hide{
+  from{
+    transform: scale(1);
+    opacity: 1;
+  }
+  to{
+    transform: scale(0);
+   opacity: 0;
+  }
+}
+
+/* .line-1 {
+
+}
+.line-2 {
+  
+}
+.line-3 {
+  
+} */
