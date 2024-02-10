@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background: blueviolet;
+  background: linear-gradient(to bottom left, #4ec4c9, #443da1);
+  border: 1px gray black;
+  height: 350px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 3px 3px 2px gray;
+}
+/* Designing for numbers */
+.number {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+
+.half-one {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  background: #fefefe;
+  height: 45px;
+  width: 22px;
+  z-index: 2;
+  rotate: z 50deg;
+  border-radius: 4px;
+}
+.another-half-one {
+  border-radius: 4px;
+  position: absolute;
+  height: 110px;
+  width: 25px;
+  top: 0;
+  background: white;
+  z-index: 9;
+  box-shadow: 0 0px 2px gray;
+}
+.zero-one {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  border: 24px solid white;
+  border-radius: 50%;
+  left: 20px;
+  z-index: 5;
+  box-shadow: 0 0px 2px gray;
+}
+.zero-two {
+  position: absolute;
+  right: -15px;
+  width: 110px;
+  height: 110px;
+  border: 24px solid white;
+  border-radius: 50%;
+}
+
+/* Text styles */
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.days {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 85px;
+}
+.css {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
